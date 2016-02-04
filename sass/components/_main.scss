@@ -91,9 +91,14 @@ h1 {
         }  
 }
 
+.center {
+    text-align: center;
+}
+
 .star-bunch {
     color: $yellow;
-    margin: auto;
+    margin-left: none;
+    margin-right: none;
     font-size: 50px;
     text-align: center;
         .star-1 {
