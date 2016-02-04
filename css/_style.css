@@ -110,7 +110,7 @@ h1 {
 
 @media only screen and (min-width: 60em) {
   .cloud .cloud-2 {
-    right: 27%;
+    left: 27%;
   }
 }
 
