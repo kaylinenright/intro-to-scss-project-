@@ -21,7 +21,6 @@ body {
     background-color: $dark-blue;
 }
 
-
 h1 {
     color: $yellow;
     text-align: center;
@@ -31,46 +30,37 @@ h1 {
     font-weight: 700;
 }
 
-
 .cloud {
     font-size: 99px;
     color: $white;
     text-align: center;
-    position: relative;
-	padding: 0.9em;
-}
+	top: 2.5em;
+    padding-bottom: 1.5em;
+    
+        .cloud-1 {
+	       position: absolute;
+            left: 35%;
+            z-index: 100;
+	        animation: cloud-1 2s ease-in-out infinite alternate;
+        }
 
+        .cloud-2 {
+	       position: absolute;
+	       right: 10%;
+	       z-index: 100;
+	       animation: cloud-2 2s ease-in-out infinite alternate;
+        }
 
-.cloud-1 {
-	position: absolute;
-	top: .1em;
-    left: 35%;
-    z-index: 100;
-	-webkit-animation: cloud-1 2s ease-in-out infinite alternate;
-	animation: cloud-1 2s ease-in-out infinite alternate;
-}
-
-.cloud-2 {
-	position: absolute;
-	right: 10%;
-    top: .5em;
-	z-index: 100;
-	-webkit-animation: cloud-2 2s ease-in-out infinite alternate;
-	animation: cloud-2 2s ease-in-out infinite alternate;
-}
-
-.cloud-3 {
-	position: absolute;
-	left: 10%;
-	top: .5em;
-	z-index: 100;
-	-webkit-animation: cloud-3 2.5s ease-in-out infinite alternate;
-	animation: cloud-3 2.5s ease-in-out infinite alternate;
+        .cloud-3 {
+	       position: absolute;
+	       left: 10%;
+	       z-index: 100;
+	       animation: cloud-3 2.5s ease-in-out infinite alternate;
+        }  
 }
 
 .star-bunch {
     color: $yellow;
-    padding-top: .3em;
     margin: none;
     font-size: 100px;
     text-align: center;
@@ -91,19 +81,18 @@ h1 {
     margin: none;
     text-align: center;
     font-size: 120px;
-
+        .sheep-1 {
+            animation: box-rotate-1 3s ease-in-out infinite alternate;
+        }
+     
+        .sheep-2 {
+            animation: box-rotate-2 3s ease-in-out infinite alternate;
+        }
 }
-
-
 
 @keyframes box-rotate-1 {
     from { transform: rotate(-10deg); }
     to { transform: rotate(10deg); }    
-}
-
-.sheep-1 {
-    -webkit-animation: box-rotate-1 3s ease-in-out infinite alternate;
-    animation: box-rotate-1 3s ease-in-out infinite alternate;
 }
 
 @keyframes box-rotate-2 {
@@ -111,89 +100,31 @@ h1 {
     to { transform: rotate(-10deg); }    
 }
 
-.sheep-2 {
-    -webkit-animation: box-rotate-1 3s ease-in-out infinite alternate;
-    animation: box-rotate-2 3s ease-in-out infinite alternate;
-}
-    
-
-
-
-
-
-
-  
- 
-
-
-
-
-    
-
-
-
-
-
 
 @keyframes box-scale {
-    0% {
-        transform: scale(1, 1);
-    }
-    50% {
-        transform: scale(2, 2);
-    }
+    0% { transform: scale(1, 1); }
+    50% { transform: scale(2, 2); }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes cloud-1 {
 
-	0% {
-		transform: translateX(0px);
-	}
+	0% { transform: translateX(0px); }
 
-	100% {
-		transform: translateX(5px);
-	}
-
+	100% { transform: translateX(5px); }
 }
-
-
 
 @keyframes cloud-2 {
 
-	0% {
-		transform: translateX(5px);
-	}
+	0% { transform: translateX(5px); }
 
-	100% {
-		transform: translateX(0px);
-	}
-
+	100% { transform: translateX(0px); }
 }
-
-
 
 @keyframes cloud-3 {
 
-	0% {
-		transform: translateX(0px);
-	}
+	0% { transform: translateX(0px); }
 
-	100% {
-		transform: translateX(5px);
-	}
-
+	100% { transform: translateX(5px); }
 }
 
 
@@ -231,18 +162,15 @@ h1 {
 
 
 .cloud-1 {
-	top: .1em;
     left: 40%;
 }
 
 .cloud-2 {
 	right: 17%;
-    top: .5em;
 }
 
 .cloud-3 {
 	left: 12%;
-	top: .5em;
 }
 
 .star-bunch {
@@ -287,18 +215,15 @@ h1 {
 
 
 .cloud-1 {
-	top: .1em;
     left: 45%;
 }
 
 .cloud-2 {
 	right: 27%;
-    top: .5em;
 }
 
 .cloud-3 {
 	left: 25%;
-	top: .5em;
 }
     
     .cloud-bunch {

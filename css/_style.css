@@ -52,40 +52,33 @@ h1 {
   font-size: 99px;
   color: #fff;
   text-align: center;
-  position: relative;
-  padding: 0.9em;
+  top: 2.5em;
+  padding-bottom: 1.5em;
 }
 
-.cloud-1 {
+.cloud .cloud-1 {
   position: absolute;
-  top: .1em;
   left: 35%;
   z-index: 100;
-  -webkit-animation: cloud-1 2s ease-in-out infinite alternate;
   animation: cloud-1 2s ease-in-out infinite alternate;
 }
 
-.cloud-2 {
+.cloud .cloud-2 {
   position: absolute;
   right: 10%;
-  top: .5em;
   z-index: 100;
-  -webkit-animation: cloud-2 2s ease-in-out infinite alternate;
   animation: cloud-2 2s ease-in-out infinite alternate;
 }
 
-.cloud-3 {
+.cloud .cloud-3 {
   position: absolute;
   left: 10%;
-  top: .5em;
   z-index: 100;
-  -webkit-animation: cloud-3 2.5s ease-in-out infinite alternate;
   animation: cloud-3 2.5s ease-in-out infinite alternate;
 }
 
 .star-bunch {
   color: #EECC00;
-  padding-top: .3em;
   margin: none;
   font-size: 100px;
   text-align: center;
@@ -111,6 +104,14 @@ h1 {
   font-size: 120px;
 }
 
+.sheep-colony .sheep-1 {
+  animation: box-rotate-1 3s ease-in-out infinite alternate;
+}
+
+.sheep-colony .sheep-2 {
+  animation: box-rotate-2 3s ease-in-out infinite alternate;
+}
+
 @keyframes box-rotate-1 {
   from {
     transform: rotate(-10deg);
@@ -120,11 +121,6 @@ h1 {
   }
 }
 
-.sheep-1 {
-  -webkit-animation: box-rotate-1 3s ease-in-out infinite alternate;
-  animation: box-rotate-1 3s ease-in-out infinite alternate;
-}
-
 @keyframes box-rotate-2 {
   from {
     transform: rotate(10deg);
@@ -132,11 +128,6 @@ h1 {
   to {
     transform: rotate(-10deg);
   }
-}
-
-.sheep-2 {
-  -webkit-animation: box-rotate-1 3s ease-in-out infinite alternate;
-  animation: box-rotate-2 3s ease-in-out infinite alternate;
 }
 
 @keyframes box-scale {
@@ -187,16 +178,13 @@ h1 {
     font-size: 99px;
   }
   .cloud-1 {
-    top: .1em;
     left: 40%;
   }
   .cloud-2 {
     right: 17%;
-    top: .5em;
   }
   .cloud-3 {
     left: 12%;
-    top: .5em;
   }
   .star-bunch {
     padding-top: .3em;
@@ -230,16 +218,13 @@ h1 {
     font-size: 99px;
   }
   .cloud-1 {
-    top: .1em;
     left: 45%;
   }
   .cloud-2 {
     right: 27%;
-    top: .5em;
   }
   .cloud-3 {
     left: 25%;
-    top: .5em;
   }
   .cloud-bunch {
     padding: 0.9em;
