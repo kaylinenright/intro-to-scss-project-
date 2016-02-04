@@ -28,6 +28,15 @@ h1 {
     line-height: 1.3154;
     font-family: $amatic;
     font-weight: 700;
+	   @media only screen and (min-width: 38em) {
+		font-size: 4.2807rem;
+        line-height: 0.3154;
+	   }
+	   @media only screen and (min-width: 60em) {
+		padding-top: none;
+        margin: none;
+	}
+	
 }
 
 .cloud {
@@ -36,12 +45,22 @@ h1 {
     text-align: center;
 	top: 2.5em;
     padding-bottom: 1.5em;
+       @media only screen and (min-width: 38em) {
+		  padding: 0.9em;
+        }
+                
     
         .cloud-1 {
 	       position: absolute;
-            left: 35%;
+            left: 38%;
             z-index: 100;
 	        animation: cloud-1 2s ease-in-out infinite alternate;
+                @media only screen and (min-width: 38em) {
+		              left: 40%
+                }
+                @media only screen and (min-width: 60em) {
+		              left: 45%
+	           }
         }
 
         .cloud-2 {
@@ -49,13 +68,25 @@ h1 {
 	       right: 10%;
 	       z-index: 100;
 	       animation: cloud-2 2s ease-in-out infinite alternate;
+               @media only screen and (min-width: 38em) {
+		              right: 17%
+                }
+                @media only screen and (min-width: 60em) {
+		              right: 27%
+	           }
         }
 
         .cloud-3 {
 	       position: absolute;
-	       left: 10%;
+	       left: 7%;
 	       z-index: 100;
 	       animation: cloud-3 2.5s ease-in-out infinite alternate;
+               @media only screen and (min-width: 38em) {
+		              left: 12%;
+                }
+                @media only screen and (min-width: 60em) {
+		              left: 25%;
+	           }
         }  
 }
 
@@ -73,6 +104,17 @@ h1 {
         .star-3 {
             animation: box-scale 8.5s ease-in-out infinite;
         }
+        @media only screen and (min-width: 38em) {
+		padding-top: .3em;
+        font-size: 140px;
+        margin: none;
+	   }
+	   @media only screen and (min-width: 60em) {
+        padding-top: .3em;
+        margin: 0;
+        padding: 0.1em;
+	}
+	
 }
 
  .sheep-colony {
@@ -88,6 +130,11 @@ h1 {
         .sheep-2 {
             animation: box-rotate-2 3s ease-in-out infinite alternate;
         }
+        @media only screen and (min-width: 38em) {
+		padding-top: .5em;
+        font-size: 150px;
+	   }
+	
 }
 
 @keyframes box-rotate-1 {
@@ -129,114 +176,3 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 38em) {
-    
-    
-    h1 {
-    font-size: 4.2807rem;
-    line-height: 0.3154;
-}
-
-.sheep {
-    font-size: 200px;
-}
-
-.cloud {
-    font-size: 99px;
-}
-
-
-.cloud-1 {
-    left: 40%;
-}
-
-.cloud-2 {
-	right: 17%;
-}
-
-.cloud-3 {
-	left: 12%;
-}
-
-.star-bunch {
-    padding-top: .3em;
-    font-size: 140px;
-    margin: none;
-
-}
- .sheep-colony {
-    padding-top: .5em;
-    font-size: 110px;
-}
-    
-      .cloud-bunch {
-	padding: 0.9em;
-}
-  
-}    
-
-@media only screen and (min-width: 60em) {
-
-h1 {
-    padding-top: none;
-    margin: none;
-
-}
-  
-.none {
-    padding: none;
-    margin: none;
-}
-    
-.sheep {
-    font-size: 200px;
-    padding-right: 1em;
-    padding-left: 1em;
-}
-
-.cloud {
-    font-size: 99px;
-}
-
-
-.cloud-1 {
-    left: 45%;
-}
-
-.cloud-2 {
-	right: 27%;
-}
-
-.cloud-3 {
-	left: 25%;
-}
-    
-    .cloud-bunch {
-	padding: 0.9em;
-}
-
-.star-bunch {
-    padding-top: .3em;
-    margin: 0;
-    padding: 0.1em;
-}
-    
- .sheep-colony {
-    padding-top: 1em;     
-}
-    }

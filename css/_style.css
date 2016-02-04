@@ -48,6 +48,20 @@ h1 {
   font-weight: 700;
 }
 
+@media only screen and (min-width: 38em) {
+  h1 {
+    font-size: 4.2807rem;
+    line-height: 0.3154;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  h1 {
+    padding-top: none;
+    margin: none;
+  }
+}
+
 .cloud {
   font-size: 99px;
   color: #fff;
@@ -56,11 +70,29 @@ h1 {
   padding-bottom: 1.5em;
 }
 
+@media only screen and (min-width: 38em) {
+  .cloud {
+    padding: 0.9em;
+  }
+}
+
 .cloud .cloud-1 {
   position: absolute;
-  left: 35%;
+  left: 38%;
   z-index: 100;
   animation: cloud-1 2s ease-in-out infinite alternate;
+}
+
+@media only screen and (min-width: 38em) {
+  .cloud .cloud-1 {
+    left: 40%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .cloud .cloud-1 {
+    left: 45%;
+  }
 }
 
 .cloud .cloud-2 {
@@ -70,11 +102,35 @@ h1 {
   animation: cloud-2 2s ease-in-out infinite alternate;
 }
 
+@media only screen and (min-width: 38em) {
+  .cloud .cloud-2 {
+    right: 17%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .cloud .cloud-2 {
+    right: 27%;
+  }
+}
+
 .cloud .cloud-3 {
   position: absolute;
-  left: 10%;
+  left: 7%;
   z-index: 100;
   animation: cloud-3 2.5s ease-in-out infinite alternate;
+}
+
+@media only screen and (min-width: 38em) {
+  .cloud .cloud-3 {
+    left: 12%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .cloud .cloud-3 {
+    left: 25%;
+  }
 }
 
 .star-bunch {
@@ -96,6 +152,22 @@ h1 {
   animation: box-scale 8.5s ease-in-out infinite;
 }
 
+@media only screen and (min-width: 38em) {
+  .star-bunch {
+    padding-top: .3em;
+    font-size: 140px;
+    margin: none;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .star-bunch {
+    padding-top: .3em;
+    margin: 0;
+    padding: 0.1em;
+  }
+}
+
 .sheep-colony {
   color: #fff;
   padding-top: .5em;
@@ -110,6 +182,13 @@ h1 {
 
 .sheep-colony .sheep-2 {
   animation: box-rotate-2 3s ease-in-out infinite alternate;
+}
+
+@media only screen and (min-width: 38em) {
+  .sheep-colony {
+    padding-top: .5em;
+    font-size: 150px;
+  }
 }
 
 @keyframes box-rotate-1 {
@@ -163,78 +242,5 @@ h1 {
   }
   100% {
     transform: translateX(5px);
-  }
-}
-
-@media only screen and (min-width: 38em) {
-  h1 {
-    font-size: 4.2807rem;
-    line-height: 0.3154;
-  }
-  .sheep {
-    font-size: 200px;
-  }
-  .cloud {
-    font-size: 99px;
-  }
-  .cloud-1 {
-    left: 40%;
-  }
-  .cloud-2 {
-    right: 17%;
-  }
-  .cloud-3 {
-    left: 12%;
-  }
-  .star-bunch {
-    padding-top: .3em;
-    font-size: 140px;
-    margin: none;
-  }
-  .sheep-colony {
-    padding-top: .5em;
-    font-size: 110px;
-  }
-  .cloud-bunch {
-    padding: 0.9em;
-  }
-}
-
-@media only screen and (min-width: 60em) {
-  h1 {
-    padding-top: none;
-    margin: none;
-  }
-  .none {
-    padding: none;
-    margin: none;
-  }
-  .sheep {
-    font-size: 200px;
-    padding-right: 1em;
-    padding-left: 1em;
-  }
-  .cloud {
-    font-size: 99px;
-  }
-  .cloud-1 {
-    left: 45%;
-  }
-  .cloud-2 {
-    right: 27%;
-  }
-  .cloud-3 {
-    left: 25%;
-  }
-  .cloud-bunch {
-    padding: 0.9em;
-  }
-  .star-bunch {
-    padding-top: .3em;
-    margin: 0;
-    padding: 0.1em;
-  }
-  .sheep-colony {
-    padding-top: 1em;
   }
 }
