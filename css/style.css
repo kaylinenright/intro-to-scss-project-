@@ -8,11 +8,6 @@
   scale: 1;
 }
 
-@-o-viewport {
-  width: device-width;
-  scale: 1;
-}
-
 @-webkit-viewport {
   width: device-width;
   scale: 1;
@@ -25,7 +20,6 @@
 
 html {
   box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -81,7 +75,8 @@ h1 {
   position: absolute;
   left: 38%;
   z-index: 100;
-  animation: cloud-1 2s ease-in-out infinite alternate;
+  -webkit-animation: cloud-1 2s ease-in-out infinite alternate;
+          animation: cloud-1 2s ease-in-out infinite alternate;
 }
 
 @media only screen and (min-width: 38em) {
@@ -100,7 +95,8 @@ h1 {
   position: absolute;
   right: 10%;
   z-index: 100;
-  animation: cloud-2 2s ease-in-out infinite alternate;
+  -webkit-animation: cloud-2 2s ease-in-out infinite alternate;
+          animation: cloud-2 2s ease-in-out infinite alternate;
 }
 
 @media only screen and (min-width: 38em) {
@@ -119,7 +115,8 @@ h1 {
   position: absolute;
   left: 7%;
   z-index: 100;
-  animation: cloud-3 2.5s ease-in-out infinite alternate;
+  -webkit-animation: cloud-3 2.5s ease-in-out infinite alternate;
+          animation: cloud-3 2.5s ease-in-out infinite alternate;
 }
 
 @media only screen and (min-width: 38em) {
@@ -138,40 +135,70 @@ h1 {
   text-align: center;
 }
 
+.icon-stars {
+  display: inline-block;
+  font-size: 5em;
+}
+
+.star-group {
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  margin-bottom: none;
+}
+
 .star-bunch {
   color: #EECC00;
-  margin-left: none;
-  margin-right: none;
-  font-size: 50px;
+  font-size: 15px;
   text-align: center;
-}
-
-.star-bunch .star-1 {
-  animation: box-scale 10s ease-in-out infinite;
-  text-align: center;
-}
-
-.star-bunch .star-2 {
-  animation: box-scale 7s ease-in-out infinite;
-}
-
-.star-bunch .star-3 {
-  animation: box-scale 8.5s ease-in-out infinite;
+  letter-spacing: 10px;
 }
 
 @media only screen and (min-width: 38em) {
   .star-bunch {
-    padding-top: .3em;
-    margin: none;
+    font-size: 25px;
+    letter-spacing: 20px;
   }
 }
 
 @media only screen and (min-width: 60em) {
   .star-bunch {
-    padding-top: .3em;
-    margin: 0;
-    padding: 0.1em;
+    font-size: 20px;
+    letter-spacing: 60px;
   }
+}
+
+.star-1 {
+  -webkit-animation: box-scale 10s ease-in-out infinite;
+          animation: box-scale 10s ease-in-out infinite;
+  text-align: center;
+}
+
+.star-2 {
+  -webkit-animation: box-scale 7s ease-in-out infinite;
+          animation: box-scale 7s ease-in-out infinite;
+}
+
+.star-3 {
+  -webkit-animation: box-scale 8.5s ease-in-out infinite;
+          animation: box-scale 8.5s ease-in-out infinite;
+}
+
+@media only screen and (min-width: 38em) {
+  padding-top: .3em;
+  margin: none;
+}
+
+@media only screen and (min-width: 60em) {
+  padding-top: .3em;
+  margin: 0;
+  padding: 0.1em;
+}
+
+.unit {
+  margin: auto;
 }
 
 .sheep-colony {
@@ -183,11 +210,13 @@ h1 {
 }
 
 .sheep-colony .sheep-1 {
-  animation: box-rotate-1 3s ease-in-out infinite alternate;
+  -webkit-animation: box-rotate-1 3s ease-in-out infinite alternate;
+          animation: box-rotate-1 3s ease-in-out infinite alternate;
 }
 
 .sheep-colony .sheep-2 {
-  animation: box-rotate-2 3s ease-in-out infinite alternate;
+  -webkit-animation: box-rotate-2 3s ease-in-out infinite alternate;
+          animation: box-rotate-2 3s ease-in-out infinite alternate;
 }
 
 @media only screen and (min-width: 38em) {
@@ -197,57 +226,135 @@ h1 {
   }
 }
 
-@keyframes box-rotate-1 {
+@-webkit-keyframes box-rotate-1 {
   from {
-    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
   to {
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes box-rotate-1 {
+  from {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  to {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes box-rotate-2 {
+  from {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 }
 
 @keyframes box-rotate-2 {
   from {
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
   to {
-    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes box-scale {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
   }
 }
 
 @keyframes box-scale {
   0% {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   50% {
-    transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+  }
+}
+
+@-webkit-keyframes cloud-1 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
 @keyframes cloud-1 {
   0% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
   100% {
-    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@-webkit-keyframes cloud-2 {
+  0% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes cloud-2 {
   0% {
-    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
   100% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes cloud-3 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
 @keyframes cloud-3 {
   0% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
   100% {
-    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
@@ -261,25 +368,30 @@ h1 {
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .grid-bottom {
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
-  align-items: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
 }
 
 .grid-middle {
   -webkit-align-items: center;
   -ms-align-items: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
-  align-items: stretch;
+  -ms-flex-align: stretch;
+      align-items: stretch;
 }
 
 .opera-only :-o-prefocus, .grid {
@@ -693,11 +805,13 @@ h1 {
 .content-fill {
   -ms-flex-grow: 2;
   -webkit-flex-grow: 2;
-  flex-grow: 2;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
 }
 
 .content-shrink {
   -ms-align-self: center;
   -webkit-align-self: center;
-  align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }

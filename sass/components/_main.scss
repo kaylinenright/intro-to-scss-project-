@@ -105,12 +105,23 @@ h1 {
     text-align: center;
 }
     
-    
+ p{
+     margin-bottom: none;
+ }
     
 .star-bunch {
     color: $yellow;
-    font-size: 50px;
+    font-size: 15px;
     text-align: center;
+    letter-spacing: 10px;
+       @media only screen and (min-width: 38em) {
+		 font-size: 25px;
+        letter-spacing: 20px;
+	   }
+	   @media only screen and (min-width: 60em) {
+        font-size: 20px;
+        letter-spacing: 60px;
+	}
     
 }
         .star-1 {
@@ -133,6 +144,9 @@ h1 {
         padding: 0.1em;
 	}
 
+.unit{
+    margin: auto;
+}
 
  .sheep-colony {
     color: $white;
