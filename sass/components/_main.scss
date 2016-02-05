@@ -95,12 +95,24 @@ h1 {
     text-align: center;
 }
 
+.icon-stars{
+    display: inline-block;
+    font-size: 5em;
+}
+
+.star-group{
+    margin: auto;
+    text-align: center;
+}
+    
+    
+    
 .star-bunch {
     color: $yellow;
-    margin-left: none;
-    margin-right: none;
     font-size: 50px;
     text-align: center;
+    
+}
         .star-1 {
             animation: box-scale 10s ease-in-out infinite;
             text-align: center;
@@ -120,8 +132,7 @@ h1 {
         margin: 0;
         padding: 0.1em;
 	}
-	
-}
+
 
  .sheep-colony {
     color: $white;
